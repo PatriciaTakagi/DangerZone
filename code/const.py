@@ -1,5 +1,4 @@
-
-
+import pygame
 
 #C
 C_BLACK = (0,0,0)
@@ -22,11 +21,22 @@ ENTITY_SPEED = {
     'Enemyplane2Shot': 2,
 }
 
+EVENT_ENEMY = pygame.USEREVENT + 1
+
 #M
 MENU_OPTION = ('START NEW GAME',
                 'SCORE',
                 'EXIT')
 
+# P
+PLAYER_KEY_UP = {'Playerplane': pygame.K_UP}
+PLAYER_KEY_DOWN = {'Playerplane': pygame.K_DOWN}
+PLAYER_KEY_LEFT = {'Playerplane': pygame.K_LEFT}
+PLAYER_KEY_RIGHT = {'Playerplane': pygame.K_RIGHT}
+PLAYER_KEY_SHOOT = {'Playerplane': pygame.K_RCTRL}
+
+#S
+SPAWN_TIME= 4000
 
 #W
 WIN_WIDTH = 576
