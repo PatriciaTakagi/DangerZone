@@ -22,10 +22,11 @@ class Menu:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(40, "Danger Zone", C_RED, ((WIN_WIDTH / 2), 60))
-            self.menu_text(15, "Controls:", C_BLACK, ((WIN_WIDTH / 2), 230))
-            self.menu_text(12, "UP Arrow - Move Up     DOWN Arrow - Move Down ", C_BLACK, ((WIN_WIDTH / 2), 250))
-            self.menu_text(12, "LEFT Arrow - Move Left     RIGHT Arrow - Move Right", C_BLACK, ((WIN_WIDTH / 2), 270))
-            self.menu_text(12, "ENTER - Select menu      CTRL - Shoot", C_BLACK, ((WIN_WIDTH / 2), 290))
+            self.menu_text(16, "Controls:", C_BLACK, ((WIN_WIDTH / 2), 230))
+            self.menu_text(15, "UP Arrow - Move Up     DOWN Arrow - Move Down ", C_BLACK, ((WIN_WIDTH / 2), 250))
+            self.menu_text(15, "LEFT Arrow - Move Left     RIGHT Arrow - Move Right", C_BLACK, ((WIN_WIDTH / 2), 270))
+            self.menu_text(15, "ENTER - Select Menu    CTRL - Shoot   ESC-Exit Scoreboard", C_BLACK, ((WIN_WIDTH / 2), 290))
+            self.menu_text(14, "Game Demo", C_RED, ((WIN_WIDTH / 2), 310))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:

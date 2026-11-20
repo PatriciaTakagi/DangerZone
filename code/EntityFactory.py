@@ -22,9 +22,9 @@ class EntityFactory:
             case 'Playerplane':
                 return Player('Playerplane',(10,WIN_HEIGHT/2))
             case 'Enemyplane1':
-                return Enemy('Enemyplane1',(WIN_WIDTH +10,random.randint(40, WIN_HEIGHT -70)))
+                return Enemy('Enemyplane1',(WIN_WIDTH +10,random.randint(40, WIN_HEIGHT -100)))
             case 'Enemyplane2':
-                return Enemy('Enemyplane2', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT -70)))
+                return Enemy('Enemyplane2', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT -100)))
 
 
 
