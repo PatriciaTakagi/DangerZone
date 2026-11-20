@@ -5,6 +5,8 @@ C_BLACK = (0,0,0)
 C_WHITE = (255,255,255)
 C_ORANGE = (255,165,0)
 C_RED = (255,0,0)
+C_GREEN = (0,255,0)
+C_CYAN = (0,255,255)
 
 #E
 
@@ -32,6 +34,32 @@ ENTITY_HEALTH = {
     'Enemyplane1Shot': 1,
     'Enemyplane2': 60,
     'Enemyplane2Shot': 1,
+}
+
+ENTITY_DAMAGE = {
+    'Level1Bg0': 0,
+    'Level1Bg1': 0,
+    'Level1Bg2': 0,
+    'Level1Bg3': 0,
+    'Playerplane': 1,
+    'PlayerplaneShot': 25,
+    'Enemyplane1': 1,
+    'Enemyplane1Shot': 20,
+    'Enemyplane2': 1,
+    'Enemyplane2Shot': 15,
+}
+
+ENTITY_SCORE = {
+    'Level1Bg0': 0,
+    'Level1Bg1': 0,
+    'Level1Bg2': 0,
+    'Level1Bg3': 0,
+    'Playerplane': 0,
+    'PlayerplaneShot': 0,
+    'Enemyplane1': 100,
+    'Enemyplane1Shot': 0,
+    'Enemyplane2': 90,
+    'Enemyplane2Shot': 0,
 }
 
 ENTITY_SHOT_DELAY = {

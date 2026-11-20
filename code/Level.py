@@ -12,7 +12,7 @@ from code.Entity import Entity
 from code.EntityFactory import EntityFactory
 from code.EntityMediator import EntityMediator
 from code.Player import Player
-from code.const import C_WHITE, WIN_HEIGHT, EVENT_ENEMY, SPAWN_TIME
+from code.const import C_WHITE, WIN_HEIGHT, EVENT_ENEMY, SPAWN_TIME, C_GREEN
 
 
 class Level:
@@ -41,6 +41,8 @@ class Level:
                     shoot = ent.shoot()
                     if shoot is not None:
                         self.entity_list.append(shoot)
+                if ent.name == 'Playerplane':
+                    self.level_text(14, f'Playerplane-Health: {ent.health}| Score:{ent.score}', C_GREEN, (10, 25))
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -48,6 +50,7 @@ class Level:
                 if event.type == EVENT_ENEMY:
                     choice = random.choice(('Enemyplane1','Enemyplane2'))
                     self.entity_list.append(EntityFactory.get_entity(choice))
+
 
             self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000:.1f}s', C_WHITE, (10, 5))
             self.level_text(14, f'fps: {clock.get_fps():.0f}', C_WHITE, (10, WIN_HEIGHT - 35))
