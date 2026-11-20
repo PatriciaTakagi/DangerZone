@@ -21,7 +21,18 @@ ENTITY_SPEED = {
     'Enemyplane2Shot': 2,
 }
 
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Level1Bg3': 999,
+    'Playerplane': 300,
+    'Enemyplane1': 50,
+    'Enemyplane2': 60,
+}
+
 EVENT_ENEMY = pygame.USEREVENT + 1
+
 
 #M
 MENU_OPTION = ('START NEW GAME',
